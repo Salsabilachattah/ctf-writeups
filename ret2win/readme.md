@@ -6,7 +6,7 @@ This challenge is a classic **buffer overflow** exploitation task. The provided 
 
 - Uses an unsafe `gets()` call to read user input into a fixed-size buffer.
 - Contains a hidden `win()` function that is never called , which reads and prints the flag from `flag.txt`.
-- Does not implement modern stack protections like PIE or NX 
+- Does not implement modern stack protection : PIE 
 
 ## starting with basics
 - `─$ file out`                
