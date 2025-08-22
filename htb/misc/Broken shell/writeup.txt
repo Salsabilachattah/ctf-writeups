@@ -1,0 +1,38 @@
+
+Broken@Shell$ ${_1:12:1}${_3:55:1}${_1:9:1}
+Broken@Shell$ _2=${_1:32:1}${_1:35:1}
+Broken@Shell$  _1=$( /_ 2>&1 )
+Broken@Shell$ _3=$(${_2:0:20} 2>&1 )
+Broken@Shell$ ${_1:12:1}${_3:55:1}${_1:9:1} ${_2:20:19}
+/home/restricted_user/broken_shell.sh: line 41: ct: command not found
+Broken@Shell$ ${_2:0:20}
+Broken@Shell$ _1=$( /_ 2>&1 )
+Broken@Shell$ _2=${_1:32:1}${_1:35:1}
+Broken@Shell$ _3=$(${_2:0:20} 2>&1 )
+Broken@Shell$ ${_1:12:1}${_3:55:1}${_1:9:1} ${_2:20:19}
+/home/restricted_user/broken_shell.sh: line 41: ct: command not found
+Broken@Shell$ ${_2:0:20}
+1  broken_shell.sh  this_is_the_flag_gg
+Broken@Shell$ ${_2:20:19}
+Broken@Shell$ ${_1:12:1}${_3:14:1}
+/home/restricted_user/broken_shell.sh: line 41: c.: command not found
+Broken@Shell$ ${_1:12:1}${_3:24:1}
+/home/restricted_user/broken_shell.sh: line 41: cs: command not found
+Broken@Shell$ ${_1:12:1}${_3:17:1}
+/home/restricted_user/broken_shell.sh: line 41: c: command not found
+Broken@Shell$ ${_1:12:1}${_3:15:1}
+/home/restricted_user/broken_shell.sh: line 41: cs: command not found
+Broken@Shell$ ${_1:12:1}${_3:16:1}
+/home/restricted_user/broken_shell.sh: line 41: ch: command not found
+Broken@Shell$ ${_1:12:1}${_3:20:1}
+/home/restricted_user/broken_shell.sh: line 41: ci: command not found
+Broken@Shell$ ${_1:12:1}${_3:32:1}
+/home/restricted_user/broken_shell.sh: line 41: ca: command not found
+Broken@Shell$ ${_3:20:14}         
+/home/restricted_user/broken_shell.sh: line 41: is_is_the_flag: command not found
+Broken@Shell$ ${_3:18:17}
+/home/restricted_user/broken_shell.sh: line 41: this_is_the_flag_: command not found
+Broken@Shell$ ${_1:12:1}${_3:32:1}${_1:9:1} ${_3:18:19}
+'This file contains the flag. The problem is that it is not on the first line so you have to read the whole file to get it :) '
+'
+HTB{?y0u?4r3?4?tru3?b45h?3xp3rt}
